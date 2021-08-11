@@ -8,13 +8,14 @@ import {
   WechatyOptions,
 } from "wechaty";
 import { generate } from "qrcode-terminal";
-import { Adapter } from "bot-adapter";
+import { Adapter } from "@bot-adapter/core";
 
 import dotenv from "dotenv";
 
 dotenv.config();
 
-export * from "bot-adapter";
+export * from "@bot-adapter/core";
+export * from 'wechaty'
 
 export default class WechatyAdapter {
   bot: Wechaty;

@@ -1,6 +1,6 @@
 {
-  "name": "bot-adapter-wechaty",
-  "version": "0.0.1",
+  "name": "@bot-adapter/wechaty",
+  "version": "0.0.2",
   "description": "bot adapter of wechaty",
   "main": "dist/index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "bot-adapter": "^0.0.3",
+    "@bot-adapter/core": "^0.0.5",
     "dotenv": "^10.0.0",
     "qrcode-terminal": "^0.12.0",
     "reflect-metadata": "^0.1.13",
