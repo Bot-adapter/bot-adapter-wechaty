@@ -15,13 +15,18 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export * from "@bot-adapter/core";
-export * from 'wechaty'
+export * from "wechaty";
 
 export default class WechatyAdapter {
   bot: Wechaty;
   adapter: Adapter;
 
-  constructor(options?: WechatyOptions, controllers?: Function[]) {
+  constructor(
+    options: WechatyOptions = {
+      puppet: "wechaty-puppet-wechat",
+    },
+    controllers?: Function[]
+  ) {
     this.bot = new Wechaty(options);
     this.adapter = new Adapter(controllers);
   }
